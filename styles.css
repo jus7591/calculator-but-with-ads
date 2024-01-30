@@ -9,6 +9,13 @@ body {
   background-image: linear-gradient(to right, #decba4, #3e5151);
 }
 
+h1 {
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-style: italic;
+}
+
 #display {
   background-color: grey;
   width: 100%;
@@ -22,17 +29,14 @@ body {
 }
 
 .calculator {
-  position: relative;
   background-color: lightgray;
   max-width: 500px;
-  height: 575px;
   border-radius: 15px;
   overflow: hidden;
   padding: 10px;
 }
 
 .buttons {
-  position: absolute;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
@@ -129,14 +133,14 @@ button:not([disabled]):active {
 }
 
 @media (max-width: 758px) {
-  .calculator {
-    max-width: 435px;
-    height: 510px;
-  }
   button {
     width: 100px;
     height: 85px;
     font-size: 1.5rem;
+  }
+
+  #display {
+    font-size: 3rem;
   }
   .video {
     height: 360px;
@@ -149,7 +153,6 @@ button:not([disabled]):active {
   }
   .calculator {
     max-width: 375px;
-    height: 450px;
     margin-left: 5px;
   }
   button {
@@ -175,7 +178,6 @@ button:not([disabled]):active {
 @media (max-width: 412px) {
   .calculator {
     max-width: 315px;
-    height: 400px;
     margin-left: 5px;
   }
   button {
