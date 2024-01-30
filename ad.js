@@ -34,8 +34,9 @@ function playYoutubeLink() {
     microtransaction.classList.add('disabled');
   }
   setTimeout(() => {
+    link.src = '';
     modal.close();
-  }, 2000);
+  }, 15000);
 }
 
 function decideYoutubeVideo(num) {
