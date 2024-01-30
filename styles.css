@@ -9,13 +9,6 @@ body {
   background-image: linear-gradient(to right, #decba4, #3e5151);
 }
 
-h1 {
-  text-align: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
-  font-style: italic;
-}
-
 #display {
   background-color: grey;
   width: 100%;
@@ -29,14 +22,17 @@ h1 {
 }
 
 .calculator {
+  position: relative;
   background-color: lightgray;
   max-width: 500px;
+  height: 575px;
   border-radius: 15px;
   overflow: hidden;
   padding: 10px;
 }
 
 .buttons {
+  position: absolute;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
@@ -96,7 +92,7 @@ button:not([disabled]):active {
 
 .video {
   height: 720px;
-  width: 960px;
+  width: 100%;
 }
 
 .video iframe {
@@ -123,4 +119,73 @@ button:not([disabled]):active {
 
 .modal::backdrop {
   background: rgb(0 0 0 / 0.6);
+}
+
+/* Media Queries */
+@media (max-width: 990px) {
+  .video {
+    height: 540px;
+  }
+}
+
+@media (max-width: 758px) {
+  .calculator {
+    max-width: 435px;
+    height: 510px;
+  }
+  button {
+    width: 100px;
+    height: 85px;
+    font-size: 1.5rem;
+  }
+  .video {
+    height: 360px;
+  }
+}
+
+@media (max-width: 698px) {
+  body {
+    display: grid;
+  }
+  .calculator {
+    max-width: 375px;
+    height: 450px;
+    margin-left: 5px;
+  }
+  button {
+    width: 85px;
+    height: 70px;
+    font-size: 1.25rem;
+  }
+  .special-buttons {
+    flex-direction: row;
+  }
+  #watch-ad-button,
+  #secret {
+    margin: 0;
+  }
+}
+
+@media (max-width: 570px) {
+  .video {
+    height: 240px;
+  }
+}
+
+@media (max-width: 412px) {
+  .calculator {
+    max-width: 315px;
+    height: 400px;
+    margin-left: 5px;
+  }
+  button {
+    width: 70px;
+    height: 55px;
+    font-size: 1rem;
+  }
+  #watch-ad-button,
+  #secret {
+    height: 150px;
+    width: 150px;
+  }
 }
