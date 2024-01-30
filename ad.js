@@ -46,9 +46,11 @@ function decideYoutubeVideo(num) {
 
 function adsLeft() {
   adCount -= 1;
-  if (adCount === 1) {
-    adsRemaining.textContent = `${adCount} Ad Remaining!`;
+  if (adCount === 0) {
+    adsRemaining.textContent = `Division DLC Unlocked`;
+  } else if (adCount === 1) {
+    adsRemaining.textContent = `Division DLC - ${adCount} Ad Remaining!`;
   } else {
-    adsRemaining.textContent = `${adCount} Ads Remaining!`;
+    adsRemaining.textContent = `Division DLC - ${adCount} Ads Remaining!`;
   }
 }
