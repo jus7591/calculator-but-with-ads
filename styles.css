@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+
 body {
   margin: 0;
   display: flex;
@@ -40,11 +42,11 @@ h1 {
   gap: 10px;
 }
 
-#microtransaction:disabled {
+#watch-ad-button:disabled {
   cursor: not-allowed;
 }
 
-#microtransaction,
+#watch-ad-button,
 #secret {
   display: flex;
   flex-direction: row;
@@ -106,6 +108,18 @@ button:not([disabled]):active {
   border: 0;
   box-shadow: 0 0 1em rgb(0, 0, 0 / 0.3);
   border-radius: 10px;
+  background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+  text-align: center;
+  font-family: 'Sixtyfour', sans-serif;
+}
+
+#modal-header {
+  transition: 2s;
+}
+
+#modal-header:hover {
+  color: blue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .modal::backdrop {
