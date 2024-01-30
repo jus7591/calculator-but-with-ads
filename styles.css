@@ -114,12 +114,11 @@ button:not([disabled]):active {
 }
 
 #modal-header {
-  transition: 2s;
+  transition: 1s;
 }
 
 #modal-header:hover {
   color: blue;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .modal::backdrop {

@@ -41,8 +41,8 @@ function playYoutubeLink() {
 
 function decideYoutubeVideo(num) {
   counter += 1;
-  link.src = videos[num] + '?autoplay=1';
-  link.setAttribute('allow', 'autoplay: encrypted-media');
+  link.src = videos[num] + '?&autoplay=1&muted=1';
+  link.setAttribute('muted', '');
 }
 
 function adsLeft() {
