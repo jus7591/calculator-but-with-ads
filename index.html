@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>No Division Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <input id="display" readonly />
+      <div class="buttons">
+        <button class="math" id="seven">7</button>
+        <button class="math" id="eight">8</button>
+        <button class="math" id="nine">9</button>
+        <button class="math" id="multiply">X</button>
+        <button class="math" id="four">4</button>
+        <button class="math" id="five">5</button>
+        <button class="math" id="six">6</button>
+        <button class="math" id="minus">-</button>
+        <button class="math" id="one">1</button>
+        <button class="math" id="two">2</button>
+        <button class="math" id="three">3</button>
+        <button class="math" id="plus">+</button>
+        <button id="clear">Clear</button>
+        <button class="math" id="zero">0</button>
+        <button class="math" id="decimal">.</button>
+        <button id="equals">=</button>
+      </div>
+    </div>
+    <div class="special-buttons">
+      <h2 id="remaining">2 Ads Remaining</h2>
+      <button id="microtransaction">
+        Division DLC - Watch Ads & Unlock For Free!
+      </button>
+      <button id="secret"><p>Super Secret Button!</p></button>
+    </div>
+    <dialog class="modal">
+      <h2>Watch Ad For 30 Seconds!</h2>
+      <div class="video">
+        <iframe
+          id="youtube"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        ></iframe>
+      </div>
+    </dialog>
+
+    <script src="script.js"></script>
+    <script src="ad.js"></script>
+  </body>
+</html>

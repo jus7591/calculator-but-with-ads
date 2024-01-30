@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-style: italic;
+}
+
+#display {
+  background-color: grey;
+  width: 100%;
+  border-radius: 10px;
+  padding: 15px 0;
+  font-size: 5rem;
+  text-align: right;
+  outline: none;
+  border: none;
+  margin-bottom: 15px;
+}
+
+.calculator {
+  background-color: lightgray;
+  max-width: 500px;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+#microtransaction:disabled {
+  cursor: not-allowed;
+}
+
+#microtransaction,
+#secret {
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+  width: 200px;
+  margin-left: 50px;
+  text-align: center;
+}
+
+.special-buttons {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+button {
+  width: 115px;
+  height: 100px;
+  border-radius: 15px;
+  border: none;
+  font-weight: bold;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+button:not([disabled]):hover {
+  background-color: gainsboro;
+}
+
+button:not([disabled]):active {
+  background-color: azure;
+}
+
+#equals {
+  background-color: rgb(176, 223, 255);
+}
+
+#equals:hover {
+  background-color: rgb(150, 200, 255);
+}
+
+#equals:active {
+  background-color: rgb(150, 175, 255);
+}
+
+.video {
+  height: 720px;
+  width: 960px;
+}
+
+.video iframe {
+  height: 100%;
+  width: 100%;
+}
+
+.modal {
+  border: 0;
+  box-shadow: 0 0 1em rgb(0, 0, 0 / 0.3);
+  border-radius: 10px;
+}
+
+.modal::backdrop {
+  background: rgb(0 0 0 / 0.6);
+}
